@@ -1,5 +1,3 @@
-package longestCommonPrefix.brute;
-
 class longestCommonPrefix {
     public static String longestCommonPrefixFunc(String[] strs) {
 
