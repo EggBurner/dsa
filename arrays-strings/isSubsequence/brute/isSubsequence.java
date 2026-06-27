@@ -1,26 +1,29 @@
-package isSubsequence.brute;
-
 class isSubsequence {
+
     public static boolean isSubsequenceFunction(String s, String t) {
 
-        int n = 0;
-        int m = 0;
+        int start = 0;
 
-        while (n < s.length()&&m < t.length()) {
+        for (int i = 0; i < s.length(); i++) {
 
-            if (s.charAt(n)==t.charAt(m)) {
-                n++;
+            boolean found = false;
+
+            for (int j = start; j < t.length(); j++) {
+
+                if (s.charAt(i) == t.charAt(j)) {
+                    found = true;
+                    start = j + 1;
+                    break;
+                }
             }
-            m++;
+            if (!found) {
+                return false;
+            }
         }
-
-        return n==s.length();
+        return true;
     }
 
     public static void main(String[] args) {
-
-
-        boolean n = isSubsequenceFunction("abc", "abcdef");
-        System.out.println(n);
+        System.out.println(isSubsequenceFunction("abc","abcdef"));
     }
 }
