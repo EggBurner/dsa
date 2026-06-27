@@ -1,0 +1,1 @@
+//accidentally already made the brute force approach elegant. It does the work in a single pass so, O(n)
