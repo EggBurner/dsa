@@ -2,6 +2,8 @@ package linkedList.removeDupicates.optimal;
 
 import java.util.*;
 
+import linkedList.ListNode;
+
 class removeDupicates {
     public ListNode deleteDuplicatesF(ListNode head) {
 

@@ -2,6 +2,8 @@ package linkedList.removeDupicates.brute;
 
 import java.util.*;
 
+import linkedList.ListNode;
+
 
 
 class removeDupicates {
