@@ -1,5 +1,11 @@
 package heap.kthlargestelement.brute;
 
-public class kthLargestElement {
-    
+import java.util.*;
+
+class KthLargestElement {
+    public static int KthLargestElementF(int[] nums, int k) {
+
+        Arrays.sort(nums);
+        return nums[nums.length - k];
+    }
 }
