@@ -6,9 +6,7 @@ import java.util.*;
 
 class removeDupicates {
     public ListNode deleteDuplicatesF(ListNode head) {
-
         if (head == null) return null;
-
         ArrayList<Integer> list = new ArrayList<>();
 
         while (head != null) {
